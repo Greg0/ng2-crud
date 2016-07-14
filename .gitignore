@@ -13,9 +13,9 @@
 .project
 .classpath
 *.launch
-.settings/
-.history/
-.vscode/
+/.settings
+/.history
+/.vscode
 
 # misc
 /.sass-cache
