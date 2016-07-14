@@ -6,13 +6,13 @@ import {
   expect, it, xit,
   async, inject
 } from '@angular/core/testing';
-import { MessageService } from './message.service';
+import { MenuItemService } from './menu-item.service';
 
-describe('Message Service', () => {
-  beforeEachProviders(() => [MessageService]);
+describe('MenuItem Service', () => {
+  beforeEachProviders(() => [MenuItemService]);
 
   it('should ...',
-      inject([MessageService], (service: MessageService) => {
+      inject([MenuItemService], (service: MenuItemService) => {
     expect(service).toBeTruthy();
   }));
 });

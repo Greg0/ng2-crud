@@ -59,6 +59,7 @@ const barrels: string[] = [
   'app/hello-component',
   'app/hello',
   'app/home',
+  'app/shared/side-nav',
   /** @cli-barrel */
 ];
 

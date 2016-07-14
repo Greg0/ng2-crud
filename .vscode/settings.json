@@ -6,7 +6,8 @@
         "**/.DS_Store": true,
         "node_modules": true,
         "tmp": true,
-        "e2e": true
+        "e2e": true,
+        ".history": true
     },
     "experimentalDecorators": true,
     "editor.renderIndentGuides": true
