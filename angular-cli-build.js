@@ -17,7 +17,10 @@ module.exports = function (defaults) {
       'rxjs/**/*.+(js|js.map)',
       '@angular/**/*.+(js|js.map)',
       // 'ng2-bootstrap/**/*.+(ts|js|js.map|min.js)',
-      'moment/moment.js'
+      'moment/moment.js',
+      'jquery/dist/*.js',
+      'angular2-materialize/dist/*.js',
+      'materialize-css/dist/**/*',
     ]
   });
 };

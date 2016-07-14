@@ -1,5 +1,6 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
+// import "angular2-materialize";
 
 import { AppComponent, environment } from './app/';
 import { appRouterProviders } from './app/app.routes';

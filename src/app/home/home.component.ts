@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {AlertComponent} from 'ng2-bootstrap';
+
+import { MaterializeDirective } from "angular2-materialize";
 
 @Component({
   moduleId: module.id,
   selector: 'app-home',
   templateUrl: 'home.component.html',
   styleUrls: ['home.component.css'],
-  directives: [AlertComponent],
+  directives: [MaterializeDirective],
 })
 export class HomeComponent implements OnInit {
 
