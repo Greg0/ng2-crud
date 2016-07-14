@@ -13,7 +13,7 @@ const map: any = {
 
 /** User packages configuration. */
 const packages: any = {
-  'moment': {
+    'moment':{
     format: 'cjs'
   },
   // 'ng2-bootstrap':{

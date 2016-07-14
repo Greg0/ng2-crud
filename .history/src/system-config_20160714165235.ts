@@ -7,20 +7,20 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
-  // 'ng2-bootstrap': 'vendor/ng2-bootstrap',
+  'ng2-bootstrap': 'vendor/ng2-bootstrap',
   'moment': 'vendor/moment/moment.js',
 };
 
 /** User packages configuration. */
 const packages: any = {
-  'moment': {
+    'moment':{
     format: 'cjs'
   },
-  // 'ng2-bootstrap':{
-  //   format: 'cjs',
-  //   defaultExtension: 'js',
-  //   main: 'ng2-bootstrap.js'
-  // }
+  'ng2-bootstrap':{
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'ng2-bootstrap.js'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
