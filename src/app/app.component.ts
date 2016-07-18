@@ -16,5 +16,5 @@ import { SideNavComponent } from './shared'
   ]
 })
 export class AppComponent {
-  title = 'app works!';
+  pageTitle: string = 'app works!';
 }

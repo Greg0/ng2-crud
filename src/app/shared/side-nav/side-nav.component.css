@@ -3,5 +3,10 @@ nav {
 }
 
 li.active {
-    background-color: #ee6e73
+    background-color: #00897b;
+    color: #fff;
+}
+
+li.active a {
+    color: #fff;
 }

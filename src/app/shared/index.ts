@@ -1,2 +1,2 @@
-export * from './message.service';
 export * from './side-nav';
+export * from './book';

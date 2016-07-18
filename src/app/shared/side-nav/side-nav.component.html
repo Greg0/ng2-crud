@@ -1,5 +1,6 @@
 <nav>
   <ul id="slide-out" class="side-nav fixed">
+    <li class="logo"><a class="waves-effect waves-light btn-large teal lighten-3" [routerLink]="['/']"><i class="material-icons left">home</i>GK CRUD</a></li>
     <li *ngFor="let menuItem of menuItems" routerLinkActive="active"><a [routerLink]="[menuItem.route]">{{ menuItem.title }}</a></li>
   </ul>
     <a materialize="sideNav" [materializeParams]="[{edge:'left'}]" href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>

@@ -1,11 +1,16 @@
 import { RouterConfig, provideRouter } from '@angular/router';
 
 import { HomeComponent } from './home';
-import { HelloComponent } from './hello';
+import { DashboardComponent } from './dashboard';
+import { BookComponent } from './book';
 
 export const routes: RouterConfig = [
-    {path: '', component: HelloComponent},
-    {path: 'home', component: HomeComponent},
+    {path: '', redirectTo: 'dashboard'},
+    {path: 'dashboard', component: DashboardComponent},
+    {path: 'book', component: BookComponent},
+    {path: 'book/show/:id', component: BookComponent},
+    {path: 'book/edit/:id', component: BookComponent},
+    {path: 'book/delete/:id', component: BookComponent},
 ];
 
 export const appRouterProviders = [

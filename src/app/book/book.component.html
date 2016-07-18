@@ -1,0 +1,31 @@
+<table class="bordered striped highlight">
+  <thead>
+    <tr>
+      <th data-field="id">Title</th>
+      <th data-field="name">Author</th>
+      <th data-field="price">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.title }}</td>
+      <td>{{ book.author.fullName }}</td>
+      <td>
+        <a class="btn-floating modal-trigger" href="#book-detail" materialize="leanModal" [materializeParams]="[{dismissible: false}]" [book.title]="detailTitle" ><i class="material-icons">input</i></a>
+        <a class="btn-floating" [routerLink]="['edit', book.id]"><i class="material-icons">edit</i></a>
+        <a class="btn-floating" [routerLink]="['delete', book.id]"><i class="material-icons">delete</i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="book-detail" class="modal">
+  <div class="modal-content">
+    <h4>{{ detailTitle }}</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>

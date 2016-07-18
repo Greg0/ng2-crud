@@ -1,1 +1,10 @@
-header, main { padding-left: 260px; }
+header, main { padding-left: 240px; }
+nav.top-nav { box-shadow: none; height: 80px;}
+nav.top-nav a.page-title {
+    font-size: 30px;
+    line-height: 80px;
+}
+.container {width: 90%!important;}
+nav { background: #26a69a!important;}
+
+main .container { margin-top: 50px; }

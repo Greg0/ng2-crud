@@ -1,22 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-
-import { MessageService } from '../shared';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   moduleId: module.id,
   selector: 'app-hello',
   templateUrl: 'hello.component.html',
   styleUrls: ['hello.component.css'],
-  providers: [MessageService]
 })
 export class HelloComponent implements OnInit {
 
   messages: string[];
 
-  constructor(private messageService : MessageService) {}
+  constructor() {
+  }
 
   getMessages() {
-    this.messages = this.messageService.getMessages();
+    this.messages = ['asda', '12e'];
   }
 
   ngOnInit() {
