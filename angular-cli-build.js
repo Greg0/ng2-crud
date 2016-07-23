@@ -21,6 +21,7 @@ module.exports = function (defaults) {
       'jquery/dist/*.js',
       'angular2-materialize/dist/*.js',
       'materialize-css/dist/**/*',
+      'angular2-in-memory-web-api/**/*.js',
     ]
   });
 };

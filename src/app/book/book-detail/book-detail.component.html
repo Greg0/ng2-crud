@@ -1,0 +1,10 @@
+<div id="book-detail" class="modal" *ngIf="isVisible">
+  <div class="modal-content">
+    <h4>{{ book.title }}</h4>
+    <h7>{{ book.author.fullName }} <small>w kategorii: {{ book.category.name }}</small></h7>
+    <p>{{ book.description }}</p>
+  </div>
+  <div class="modal-footer">
+    <a class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+  </div>
+</div>

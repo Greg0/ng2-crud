@@ -3,6 +3,8 @@
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
+import { BookService } from '../shared';
+
 import {
   beforeEach, beforeEachProviders,
   describe, xdescribe,
@@ -14,7 +16,7 @@ import { BookComponent } from './book.component';
 
 describe('Component: Book', () => {
   it('should create an instance', () => {
-    let component = new BookComponent();
+    let component = new BookComponent(new BookService());
     expect(component).toBeTruthy();
   });
 });

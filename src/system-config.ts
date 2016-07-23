@@ -9,9 +9,10 @@
 const map: any = {
   // 'ng2-bootstrap': 'vendor/ng2-bootstrap',
   'moment': 'vendor/moment/moment.js',
-   "materialize": "vendor/materialize-css",
-   "angular2-materialize": "vendor/angular2-materialize",
-   "jquery": "vendor/jquery"
+  "materialize": "vendor/materialize-css",
+  "angular2-materialize": "vendor/angular2-materialize",
+  "jquery": "vendor/jquery",
+  "angular2-in-memory-web-api": "vendor/angular2-in-memory-web-api"
 };
 
 /** User packages configuration. */
@@ -32,6 +33,10 @@ const packages: any = {
   'angular2-materialize': {
     "main": "dist/index",
     "defaultExtension": "js"
+  },
+  'angular2-in-memory-web-api': {
+    "main": 'index',
+    "defaultExtension": 'js'
   }
 };
 
@@ -63,7 +68,8 @@ const barrels: string[] = [
   'app/shared/book',
   'app/dashboard',
   'app/book',
-  'app/book-detail',
+  'app/book/book-detail',
+  'app/book/book-form',
   /** @cli-barrel */
 ];
 

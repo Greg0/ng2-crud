@@ -1,4 +1,12 @@
-header, main { padding-left: 240px; }
+header, main, footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+    padding-left: 0;
+    }
+}
 nav.top-nav { box-shadow: none; height: 80px;}
 nav.top-nav a.page-title {
     font-size: 30px;
